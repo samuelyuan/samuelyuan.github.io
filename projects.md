@@ -7,7 +7,9 @@ title: Projects
 
 This page shows some of my personal software projects.
 
-## OpenBiohazard2
+## Games
+
+### OpenBiohazard2
 
 OpenBiohazard2 is open source re-implementation of the original Resident Evil 2 engine written in Go and OpenGL. You must own a copy of the original game to run this game.
 
@@ -18,7 +20,44 @@ OpenBiohazard2 is open source re-implementation of the original Resident Evil 2 
 
 Links: [Github](https://github.com/OpenBiohazard2/OpenBiohazard2)
 
-## Civ5MapImage
+### Online Junqi
+
+An open source Junqi app that can be played directly in your browser. This app was developed with Node.js and Websockets. The objective of the game is to capture your opponent's flag. Whoever captures the opponent's flag first wins the game.
+
+<div style="display:inline-block;">
+<img src="https://github.com/samuelyuan/online-junqi/raw/master/images/menu.png" alt="Menu" width="400px" height="200px" />
+<img src="https://github.com/samuelyuan/online-junqi/raw/master/images/game.png" alt="Gane" width="400px" height="200px" />
+</div>
+
+Links: [Github](https://github.com/samuelyuan/online-junqi)
+
+## Utilities
+
+### PolytopiaMapEditor
+
+This project is an open source map editor for The Battle of Polytopia. The game generates random maps for each game, but there is no way to edit the maps. This editor solves this problem by giving users the ability to modify the save state containing the map and customize it to their liking.
+
+<div style="display:inline-block;">
+<img src="https://raw.githubusercontent.com/samuelyuan/PolytopiaMapEditor/master/screenshots/mapeditor.png" alt="earth" width="600" height="500" />
+</div>
+
+Links: [Github](https://github.com/samuelyuan/PolytopiaMapEditor)
+
+### Bio2ScriptIde
+
+You can view the script files in the original Resident Evil 2 / Biohazard 2 as pseudocode next to the original bytecode. Every function is placed in a separate file to make it easier to switch between functions.
+
+<div style="display:inline-block;">
+<img src="https://github.com/OpenBiohazard2/Bio2ScriptIde/raw/master/screenshots/ScriptViewer.png" alt="ScriptViewer" width="400" height="300" />
+</div>
+
+Links: [Github](https://github.com/OpenBiohazard2/Bio2ScriptIde)
+
+## Game Map to Image
+
+These programs read map files from various strategy games and render them into images.
+
+### Civ5MapImage
 
 Most custom maps designed for Civ 5 will usually provide screenshots of the map, but they will either only show a portion of the map in the game or a zoomed out image which shows all of the cities but not the terrain. This program is designed to provide you a detailed view of the entire map in one single image.
 
@@ -31,36 +70,54 @@ You have the option of generating a physical map or a political map. The physica
 
 Links: [Github](https://github.com/samuelyuan/Civ5MapImage)
 
-## Online Junqi
+### PolytopiaMapImage
 
-An open source Junqi app that can be played directly in your browser. This app was developed with Node.js and Websockets.
+The Battle of Polytopia only allows one save file to be saved. If a new game is started, the old save files are discarded. There is no way to view a snapshot of the game at any time or any replay system that allows you to view past games.
 
-You can create a new game or join an existing one. When you join a game, you are given the inital layout of pieces and you can setup your board. To swap pieces, you click on the first location you want to swap and click on the second location to confirm the swap. The game will enforce the rules and prevent you from doing an invalid swap like placing a flag outside of the headquarters.
+This program extracts the map from the save file and converts it into an image or replay file that you can preserve and share.
 
-The objective of the game is to capture your opponent's flag. Whoever captures the opponent's flag first wins the game.
-
-For a more detailed version of the game's rules, you can refer to [this page](https://en.wikipedia.org/wiki/Luzhanqi).
-
+Map Image
 <div style="display:inline-block;">
-<img src="https://github.com/samuelyuan/online-junqi/raw/master/images/menu.png" alt="Menu" width="400px" height="200px" />
-<img src="https://github.com/samuelyuan/online-junqi/raw/master/images/game.png" alt="Gane" width="400px" height="200px" />
+<img src="https://raw.githubusercontent.com/samuelyuan/PolytopiaMapImage/master/examples/map.png" alt="map" width="300" height="300" />
 </div>
 
-Links: [Github](https://github.com/samuelyuan/online-junqi)
+Replay
+<div style="display:inline-block;">
+<img src="https://raw.githubusercontent.com/samuelyuan/PolytopiaMapImage/master/examples/replay.gif" alt="replay" width="300" height="300" />
+<img src="https://raw.githubusercontent.com/samuelyuan/PolytopiaMapImage/master/examples/pangea.gif" alt="pangea" width="300" height="300" />
+</div>
 
-## go-quake2
+Links: [Github](https://github.com/samuelyuan/PolytopiaMapImage)
 
-Quake 2 Map Renderer written in Go and OpenGL.
+### HexEmpireMap
+
+Procedurally generated maps for Hex Empire. This program will generate the same map that can be found in game as a static image.
+
+<div style="display:inline-block;">
+<img src="https://raw.githubusercontent.com/samuelyuan/HexEmpireMap/master/screenshots/generated.png" alt="generated map" width="400" height="300" />
+</div>
+
+Links: [Github](https://github.com/samuelyuan/HexEmpireMap)
+
+### AgeOfHistory2Map
+
+This program will render various maps found in Age of History 2, formerly known as Age of Civilizations 2. You must have a copy of the original game data stored in the data/ folder in order to generate the map images.
+
+<div style="display:inline-block;">
+<img src="https://raw.githubusercontent.com/samuelyuan/AgeOfHistory2Map/master/screenshots/modernworld.png" alt="modernworld" width="510" height="300" />
+<img src="https://raw.githubusercontent.com/samuelyuan/AgeOfHistory2Map/master/screenshots/1440.png" alt="1440" width="510" height="300" />
+</div>
+
+Links: [Github](https://github.com/samuelyuan/AgeOfHistory2Map)
+
+## 3D Rendering
+
+### go-quake2
+
+Quake 2 Map Renderer written in Go and OpenGL. Loads any BSP file from Quake 2 and lets you free roam around the environment.
 
 <div style="display:inline-block;">
 <img src="https://github.com/samuelyuan/go-quake2/raw/master/screenshots/map.png" alt="wireframe" width="400" height="300" />
 </div>
-
-### Features
-
-* Loads any BSP file from Quake 2
-* Free roam around the environment
-* Renders only a small sector of the map depending on player location
-* Supports static lightmapping
 
 Links: [Github](https://github.com/samuelyuan/go-quake2)
