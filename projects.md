@@ -7,7 +7,7 @@ title: Projects
 
 This page shows some of my personal software projects.
 
-## Games
+## Game Implementation
 
 ### OpenBiohazard2
 
@@ -31,7 +31,7 @@ An open source Junqi app that can be played directly in your browser. This app w
 
 Links: [Github](https://github.com/samuelyuan/online-junqi)
 
-## Utilities
+## Game Utilities
 
 ### PolytopiaMapEditor
 
@@ -101,7 +101,7 @@ Links: [Github](https://github.com/samuelyuan/HexEmpireMap)
 
 ### AgeOfHistory2Map
 
-This program will render various maps found in Age of History 2, formerly known as Age of Civilizations 2. You must have a copy of the original game data stored in the data/ folder in order to generate the map images.
+This program will render various maps found in Age of History 2, formerly known as Age of Civilizations 2.
 
 <div style="display:inline-block;">
 <img src="https://raw.githubusercontent.com/samuelyuan/AgeOfHistory2Map/master/screenshots/modernworld.png" alt="modernworld" width="510" height="300" />
@@ -109,6 +109,17 @@ This program will render various maps found in Age of History 2, formerly known 
 </div>
 
 Links: [Github](https://github.com/samuelyuan/AgeOfHistory2Map)
+
+### TOAWMap
+
+There have been many maps generated for The Operational Art of War (TOAW) series, but there isn't much information on the file formats and there is no way to parse the data. This project analyzes the different games and you can see how there is a lot of overlap between the various file formats. This program will read scenario files (.sce) and render the maps.
+
+<div style="display:inline-block;">
+<img src="https://raw.githubusercontent.com/samuelyuan/TOAWMap/master/screenshots/korea50.png" alt="korea50" width="145" height="300" />
+<img src="https://raw.githubusercontent.com/samuelyuan/TOAWMap/master/screenshots/manchuria.png" alt="manchuria" width="300" height="300" />
+</div>
+
+Links: [Github](https://github.com/samuelyuan/TOAWMap)
 
 ## 3D Rendering
 

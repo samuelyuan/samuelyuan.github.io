@@ -39,6 +39,17 @@ li > ul, li > ol { margin-bottom: 0; }
 /** Headings */
 h1, h2, h3, h4, h5, h6 { font-weight: 400; }
 
+h1::after,
+h2::after,
+h3::after,
+h4::after,
+h5::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid var(--color-book-border, rgba(13,17,23,.2));
+  height: 1px;
+}
+
 /** Links */
 a { color: #2a7ae2; text-decoration: none; }
 a:visited { color: #1756a9; }
